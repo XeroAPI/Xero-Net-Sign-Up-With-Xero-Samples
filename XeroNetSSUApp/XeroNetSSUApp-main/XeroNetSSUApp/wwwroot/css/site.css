@@ -1,0 +1,292 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/* Styles for Home route*/
+
+/* width */
+.info-container ::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+.info-container ::-webkit-scrollbar-track {
+	background: #007bff;
+}
+
+.right-info-container ::-webkit-scrollbar-track {
+	background: white;
+}
+
+/* Handle */
+.left-info-container ::-webkit-scrollbar-thumb {
+	background: white;
+}
+
+.right-info-container ::-webkit-scrollbar-thumb {
+	background: #007bff;
+}
+
+/* Handle on hover */
+.info-container ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+
+.render-body {
+	background: #eaf4ff;
+}
+.home {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-container {
+	display: flex;
+	flex-direction: row;
+	/* padding: 0.2em 1em; */
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+.left-info-container {
+	width: 48%;
+	border-radius: 0.3rem;
+	height: 60vh;
+	background-color: white;
+	border-radius: 0.3rem;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+.right-info-container {
+	width: 48%;
+	border-radius: 0.3rem;
+	height: 60vh;
+	background-color: white;
+	border-radius: 0.3rem;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+.list-group {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.home-title {
+	text-align: center;
+}
+
+.custom-nav-btn {
+	color: #157899;
+	background-color: #f4f4f4;
+	padding: 0.5rem 1rem;
+	margin-right: 1rem;
+}
+
+
+.organisation-table-container, .home-auth-container {
+	border-radius: 0.5rem;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	display: flex;
+	background-color: white;
+}
+
+
+.home-auth-container {
+	flex-direction: column;
+	height: 50vh;
+	padding: 2rem;
+	justify-content: center;
+	width: 70%;
+	min-width: 500px;
+	display: flex;
+	place-self: center;
+}
+
+.home-auth-form-container {
+	width: 100%;
+	padding: 2em;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+}
+
+.home-explainer-text {
+	font-size: medium;
+	display: flex;
+}
+
+a.navbar-brand {
+	white-space: normal;
+	text-align: center;
+	word-break: break-all;
+}
+  
+a.link-sidebar{
+	width: 100%;
+	color:#e2e2e2;
+	background-color: #2b3038;
+	padding-left: 10%;
+}
+a.link-sidebar:hover, a.link-sidebar:nth-child(even):hover{
+	text-decoration: none;
+	background-color: #4d5663;
+}
+a.link-sidebar:nth-child(even){
+	background-color: #333942;
+}
+
+  /* Provide sufficient contrast against white background */
+  a {
+	color: black;
+	text-decoration: none;
+  }
+  
+  .btn-primary {
+	color: #fff;
+	background-color: #1b6ec2;
+	border-color: #1861ac;
+  }
+
+  .sidebar-expanded{
+	  background-color: #262c33;
+	  color: white;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #1b6ec2;
+	border-color: #1861ac;
+  }
+  
+  /* Sticky footer styles
+  -------------------------------------------------- */
+  html {
+	font-size: 14px;
+  }
+  @media (min-width: 768px) {
+	html {
+	  font-size: 16px;
+	}
+  }
+  
+  .border-top {
+	border-top: 1px solid #e5e5e5;
+  }
+  .border-bottom {
+	border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .box-shadow {
+	box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  }
+  
+  button.accept-policy {
+	font-size: 1rem;
+	line-height: inherit;
+  }
+
+
+  /* Sticky footer styles
+  -------------------------------------------------- */
+  html {
+	position: relative;
+	min-height: 100%;
+  }
+  
+  body {
+	/* Margin bottom by footer height */
+	/* margin-bottom: 60px; */
+	min-height: 100vh;
+	height: 100%;
+  }
+
+
+  .custom-footer{
+	  background-color: purple;
+	  width: 100%;
+	  height: 5%;
+  }
+
+.side-navbar, .render-body{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.side-navbar{
+	background-color: #54595c;
+	height: 100%;
+}
+
+.render-body{
+	padding: 10%;
+}
+
+  header{
+	display: block;
+  }
+
+.list-sidebar{
+	list-style-type: none;
+}
+
+.sidebar-title{
+	width: 100%;
+	padding: 5px;
+	color: #7e868a;
+	background-color: #494d50;
+	color: rgb(179, 179, 179);
+}
+
+
+.link-holder{
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5%;
+	color: white;
+	width: 100%;
+	background-color: #54595c;
+}
+.link-holder:hover{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	background-color: #676d70;
+	padding-left: 5%;
+	color: white;
+	text-decoration: none;
+}
+
+#link-holder-selected{
+	background-color: #676d70;
+}
+
+footer {
+	padding: 15px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+  }
+
+  #custom-link{
+	  text-decoration: none;
+	  color: rgb(67, 164, 255);
+  }
+  #custom-link:hover{
+	  text-decoration: underline;
+	  color: rgb(85, 158, 226);
+  }
+
+  #endpoint-img{
+	  margin-left: 15px;
+	  margin-bottom: 4px;
+  }
+
+.row{
+	min-height: 100vh;
+	height: 100%;
+}
+

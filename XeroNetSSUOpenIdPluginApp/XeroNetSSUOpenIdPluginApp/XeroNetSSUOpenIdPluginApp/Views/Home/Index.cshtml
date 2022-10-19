@@ -1,0 +1,82 @@
+﻿@model XeroNetSSUOpenIdPluginApp.Models.DashboardModel
+
+@{
+  ViewData["Title"] = "Home Page";
+}
+@if (User.Identity.IsAuthenticated)
+{
+  <h2>Welcome 👋</h2>
+  <div class="organisation-table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">ID</th>
+          <th scope="col">Entity Type</th>
+          <th scope="col">Base Currency</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (var org in Model.organisation._Organisations)
+        {
+          <tr>
+            <th scope="row">@org.Name</th>
+            <td>@org.OrganisationID</td>
+            <td>@org.OrganisationEntityType</td>
+            <td>@org.BaseCurrency</td>
+          </tr>
+        }
+    </table>
+  </div>
+  <div class="info-container">
+    <div class="left-info-container">
+      <div class="list-group">
+        @foreach (var account in Model.accounts._Accounts)
+        {
+          <div class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">@account.Name</h5>
+              <small>@account.UpdatedDateUTC.ToString()</small>
+            </div>
+            <p class="mb-1">@account.Description</p>
+            <small>@account.BankAccountNumber</small>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="right-info-container">
+      <ul class="list-group">
+        @foreach (var contact in Model.contacts._Contacts)
+        {
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            @contact.Name
+            <span class="badge badge-primary badge-pill">@contact.DefaultCurrency</span>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+}
+else
+{
+  <div class="home">
+    <h1 class="home-title">
+      Welcome to the Sign Up With Xero Sample App.
+    </h1>
+    <div class="home-auth-container">
+      <div class="home-auth-form-container">
+        <span data-xero-sso data-href="/home/signin" data-label="Sign in with Xero"></span>
+        <span data-xero-sso data-href="/home/signup" data-label="Sign up with Xero"></span>
+        <script src="https://edge.xero.com/platform/sso/xero-sso.js"></script>
+      </div>
+      <div class="home-explainer-text">
+        This is a sample app that demos how to add Sign up with Xero capability to a sample app. If you're new here, click Sign Up With Xero to see how it works! 🎉
+      </div>
+      <br />
+      <div class="home-explainer-text">
+        💡💡💡If you are trying to connect your app on the Xero App store to your sign up, use your "connect request url/redirect URI" to connect. 💡💡💡
+      </div>
+    </div>
+  </div>
+}

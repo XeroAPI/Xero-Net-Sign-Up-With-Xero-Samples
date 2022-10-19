@@ -1,0 +1,44 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*<meta name="xero-client-id" content="@Configuration["XeroConfiguration:ClientId"]">
+    <meta name="xero-scopes" content="@Configuration["XeroConfiguration:Scope"]">
+    <meta name="xero-redirect-uri" content="@Configuration["XeroConfiguration:CallbackUri"]">*@
+    <!-- optional -->
+    @*<meta name="xero-state" content="@TokenUtilities.GetCurrentState()">*@
+    <title>@ViewData["Title"] - XeroNetSSUOpenIdPluginApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+    <body>
+        <header>
+            @await Component.InvokeAsync("NavBar", new { maxPriority = 2, isDone = false })
+        </header>
+
+        <div class="row no-gutters">
+            <div class="render-body">
+                @RenderBody()
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                &copy; @DateTime.Now.Year - XeroNetSSUOpenIdPluginApp
+            </div>        
+        </footer>
+        
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>
