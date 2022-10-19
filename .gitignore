@@ -60,4 +60,5 @@ msbuild.wrn
 */localappsettings.json
 
 # Once pulled, during development alternate below appsettings.json part 
-*/appsettings.json
+**/appsettings.json
+XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/appsettings.json
