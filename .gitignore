@@ -1,0 +1,63 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+.fake
+.ionide
+*/obj/Debug/netcoreapp3.1/*.csprojAssemblyReference.cache
+*/bin/Debug/netcoreapp3.1/Xero.NetStandard.OAuth2Client.dll
+*/bin/Debug/netcoreapp3.1/*.dll
+*/bin/Debug/netcoreapp3.1/*.pdb
+*/bin/Debug/netcoreapp3.1/*.Views.dll
+*/bin/Debug/netcoreapp3.1/*.Views.pdb
+*/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+*/obj/Debug/netcoreapp3.1/*.csproj.FileListAbsolute.txt
+*/obj/Debug/netcoreapp3.1/*.dll
+*/obj/Debug/netcoreapp3.1/*.pdb
+*/obj/Debug/netcoreapp3.1/*.RazorCoreGenerate.cache
+*/obj/Debug/netcoreapp3.1/*.Views.dll
+*/obj/Debug/netcoreapp3.1/*.Views.pdb
+*/bin/Debug/netcoreapp3.1/xerotoken.json
+*/bin/Debug/netcoreapp3.1/Xero.NetStandard.OAuth2.dll
+*/obj/Debug/netcoreapp3.1/*.csprojAssemblyReference.cache
+*/xerotoken.json
+
+*/tenantid.json
+*/state.json
+*/localappsettings.json
+
+# Once pulled, during development alternate below appsettings.json part 
+*/appsettings.json
