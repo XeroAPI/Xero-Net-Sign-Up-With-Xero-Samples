@@ -45,10 +45,8 @@ msbuild.wrn
 
 # Once pulled, during development alternate below appsettings.json part 
 **/**/appsettings.json
-
-/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/obj/Debug
-/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/bin
-/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/appsettings.json
-/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/appsettings.Development.json
-/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/appsettings.Development.json
-/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/appsettings.json
+/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/appsettings.Development.json
+/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/obj
+/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/bin/Debug/netcoreapp3.1
+/XeroNetSSUApp/XeroNetSSUApp/obj
+/XeroNetSSUApp/XeroNetSSUApp/bin/Debug/netcoreapp3.1
