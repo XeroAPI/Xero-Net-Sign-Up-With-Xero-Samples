@@ -37,22 +37,6 @@ msbuild.wrn
 .vs/
 .fake
 .ionide
-*/obj/Debug/netcoreapp3.1/*.csprojAssemblyReference.cache
-*/bin/Debug/netcoreapp3.1/Xero.NetStandard.OAuth2Client.dll
-*/bin/Debug/netcoreapp3.1/*.dll
-*/bin/Debug/netcoreapp3.1/*.pdb
-*/bin/Debug/netcoreapp3.1/*.Views.dll
-*/bin/Debug/netcoreapp3.1/*.Views.pdb
-*/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
-*/obj/Debug/netcoreapp3.1/*.csproj.FileListAbsolute.txt
-*/obj/Debug/netcoreapp3.1/*.dll
-*/obj/Debug/netcoreapp3.1/*.pdb
-*/obj/Debug/netcoreapp3.1/*.RazorCoreGenerate.cache
-*/obj/Debug/netcoreapp3.1/*.Views.dll
-*/obj/Debug/netcoreapp3.1/*.Views.pdb
-*/bin/Debug/netcoreapp3.1/xerotoken.json
-*/bin/Debug/netcoreapp3.1/Xero.NetStandard.OAuth2.dll
-*/obj/Debug/netcoreapp3.1/*.csprojAssemblyReference.cache
 */xerotoken.json
 
 */tenantid.json
@@ -60,5 +44,11 @@ msbuild.wrn
 */localappsettings.json
 
 # Once pulled, during development alternate below appsettings.json part 
-**/appsettings.json
-XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/appsettings.json
+**/**/appsettings.json
+
+/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/obj/Debug
+/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/bin
+/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/appsettings.json
+/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/XeroNetSSUOpenIdPluginApp/appsettings.Development.json
+/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/appsettings.Development.json
+/XeroNetSSUApp/XeroNetSSUApp-main/XeroNetSSUApp/appsettings.json

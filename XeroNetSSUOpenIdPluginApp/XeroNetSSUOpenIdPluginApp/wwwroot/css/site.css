@@ -94,7 +94,6 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .home-auth-container {
 	flex-direction: column;
-	height: 50vh;
 	padding: 2rem;
 	justify-content: center;
 	width: 70%;
