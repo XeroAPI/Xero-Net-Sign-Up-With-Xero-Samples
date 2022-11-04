@@ -50,6 +50,8 @@ Note that you will have to have a state. The CallbackUri has to be exactly the s
 
 For the purpose of mocking an authentication system, the app spins up a local database called Test in which a database table called "User" is created. This table will contain all the users that will be registered using Xero as an identity provider.
 
+#### Windows Users
+
 In order to create the database, we recommend using Microsoft Visual Studio.
 1. Load the sample application in Microsoft Visual Studio
 2. Open SQL Server Object Explorer. This should open in a left pane.
@@ -64,6 +66,11 @@ In order to create the database, we recommend using Microsoft Visual Studio.
         "Database": "Data Source=(localdb)\\ProjectsV13..."
     }
 ```
+
+#### Mac Users
+
+If you're using a Mac, SQL Server Object Explorer is not available in Visual Studio. Instead, you might have to spin up an instance of Microsoft SQL Server and connect to it. Here's an article on how you can do this with [AWS RDS](https://www.freecodecamp.org/news/cjn-how-to-connect-your-aws-rds-microsoft-sql-server-using-azure-data-studio/).
+
 
 ## Getting started with _dotnet_  & command line 
 You can run this application with [dotnet SDK](https://code.visualstudio.com/download) from command line. 

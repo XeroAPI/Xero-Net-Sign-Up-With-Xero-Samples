@@ -116,7 +116,8 @@ namespace XeroNetSSUOpenIdPluginApp
       app.UseRouting();
       app.UseCookiePolicy(new CookiePolicyOptions()
       {
-        Secure = CookieSecurePolicy.Always
+        Secure = CookieSecurePolicy.Always,
+        MinimumSameSitePolicy = SameSiteMode.Unspecified
       });
       app.UseAuthentication();
       app.UseAuthorization();
